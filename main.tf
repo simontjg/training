@@ -46,7 +46,7 @@ resource "aws_instance" "test-server" {
   ami                    = "ami-74ee001b"
   instance_type          = "t2.micro"
   subnet_id              = "subnet-9e15f8f6"
-  count                  = "2"
+  count                  = "1"
   vpc_security_group_ids = ["sg-dca200b4"]
 
   tags {
